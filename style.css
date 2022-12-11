@@ -84,8 +84,11 @@ section{
     padding:1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
-    top:0; left: 0; right: 0;
-    z-index: 1000;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    overflow-x:clip;
 }
 
 .header .logo img{
@@ -364,9 +367,6 @@ section{
         position: absolute;
         top:100%; right: -100%;
         background:rgb(255, 255, 255);
-      
-        
-       
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
@@ -382,7 +382,6 @@ section{
         padding:.5rem;
         font-size: 2rem;
     }
-
  
     .home{
         background-position: left;
@@ -405,7 +404,8 @@ section{
     html{
         font-size: 50%;
     }
-     .btn{
+    
+    .btn{
         font-size: 15px;
         padding: 0;
         padding-left:0.2rem;
@@ -413,7 +413,11 @@ section{
         padding-bottom: 0.4rem; 
         background-color: transparent;
     }
-    #menu-btn{margin-top: 0.5em;}
+
+    #menu-btn{
+        margin-top: 0.5em;
+    }
+
     .logo{
         display: none;
 
@@ -422,15 +426,12 @@ section{
     #small-logo{
         display: block;
         /* padding-left: 40px; */
-        
+    }
 
+    .header .logo img{
+        height: 10em;
     }
-    .header .logo img{height: 10em;
-    }
+
     .header {background:none;
-    position: absolute;}
-    
-    
-    
-    
+    position: absolute;}  
 }
