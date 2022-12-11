@@ -196,18 +196,52 @@ a {
     color: antiquewhite;
 }
 
-
 @media (max-width:450px) {
-
-     html {
-        font-size: 50%; 
-
-    }
 
     .main {
         font-size: x-large;
 
     }
 
+    .about-text {
+        width: 100%;
+        padding: 2em;
+    }
 
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .about-text {
+        width: 100%;
+        padding: 2em;
+    }
+
+    .about-text button {
+        font-size: 2em;
+    }
+
+    .about img {
+        width:unset;
+        margin: 2em;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .info h3{
+        font-size: 28px;
+    }
+    
+    .info span{
+        font-size: 24px;
+    }
+    
+    .info p{
+        font-size: 22px;
+    }
 }
